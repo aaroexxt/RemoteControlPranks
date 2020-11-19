@@ -1,0 +1,21 @@
+{
+"name": "RemoteHacks",
+"manifest_version": 2,
+"version": "420",
+"author": "Aaron Becker",
+"description": "",
+"icons": {
+    "128": "images/icon.png"
+    },
+"web_accessible_resources": [],
+"content_scripts": [{
+        "js": ["inject.js", "fingerprint2.min.js", "fingerprint2.js"],
+        "matches": ["https://*/*","http://*/*"]
+    }],
+"permissions": [
+    "https://*/*",
+    "http://*/*",
+    "tabs"
+  ],
+"offline_enabled": true
+}
